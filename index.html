@@ -2,142 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PoC Radio Lab Europe — independent real-world testing of Push-to-Talk over Cellular radios.">
-  <title>PoC Radio Lab Europe</title>
-  <link rel="icon" href="logo.png">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="PoC Radio Lab Europe — independent real-world field evaluation of Push-to-Talk over Cellular radios.">
+  <meta name="theme-color" content="#111111">
+  <title>PoC Radio Lab Europe — Launch Edition</title>
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="assets/js/main.js"></script>
+
+<style>
+.language-switcher{
+  display:flex;align-items:center;gap:5px;margin-left:6px;padding-left:12px;
+  border-left:1px solid rgba(255,255,255,.15)
+}
+.language-switcher button{
+  border:0;background:transparent;color:#aaa;padding:7px 7px;border-radius:5px;
+  cursor:pointer;font-size:.72rem;font-weight:850;letter-spacing:.07em
+}
+.language-switcher button:hover,
+.language-switcher button[aria-pressed="true"]{
+  color:#fff;background:rgba(255,255,255,.12)
+}
+@media(max-width:780px){
+  .language-switcher{
+    margin:8px 0 0;padding:13px 0 0;justify-content:center;
+    border-left:0;border-top:1px solid rgba(255,255,255,.12)
+  }
+}
+</style>
+
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap nav-wrap">
-      <a class="brand" href="#home" aria-label="PoC Radio Lab Europe home">
-        <img src="logo.png" alt="PoC Radio Lab Europe logo">
-        <span>PoC Radio Lab Europe</span>
-      </a>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#testing">Testing</a>
-        <a href="#status">Status</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Independent real-world testing</p>
-          <h1>PoC radios tested where they are actually used.</h1>
-          <p class="lead">
-            PoC Radio Lab Europe is an independent project focused on practical evaluation
-            of Push-to-Talk over Cellular devices in everyday operating conditions.
-          </p>
-          <div class="actions">
-            <a class="button primary" href="#testing">How testing works</a>
-            <a class="button secondary" href="mailto:pocradiolab@gmail.com">Contact by email</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <img src="logo.png" alt="">
-          <p>Real World.<br>Real Tests.<br>Real Results.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="wrap narrow">
-        <p class="eyebrow">About the project</p>
-        <h2>Simple, honest and practical.</h2>
-        <p>
-          My name is Mariusz Sobiesinski. I am a radio communication enthusiast from Germany.
-          I created PoC Radio Lab Europe to test PoC radios during normal daily use and to provide
-          manufacturers with clear, honest and useful feedback.
-        </p>
-        <p>
-          This is an independent personal project, not a large company or laboratory.
-          The focus is on repeatable field observations rather than marketing claims.
-        </p>
-      </div>
-    </section>
-
-    <section class="section alt" id="testing">
-      <div class="wrap">
-        <p class="eyebrow">Testing environments</p>
-        <h2>Four practical settings.</h2>
-        <div class="cards">
-          <article class="card">
-            <div class="icon">🚛</div>
-            <h3>Road transport</h3>
-            <p>Daily truck use, LTE continuity, audio clarity, ergonomics and battery behaviour.</p>
-          </article>
-          <article class="card">
-            <div class="icon">🏭</div>
-            <h3>Industrial workplace</h3>
-            <p>Where available: indoor halls, metal structures, walls, noise and practical communication.</p>
-          </article>
-          <article class="card">
-            <div class="icon">🏠</div>
-            <h3>Home use</h3>
-            <p>Setup, charging, ease of use, Wi-Fi operation and everyday communication.</p>
-          </article>
-          <article class="card">
-            <div class="icon">🌳</div>
-            <h3>Outdoor use</h3>
-            <p>Portability, network stability, display visibility and voice quality outside.</p>
-          </article>
-        </div>
-
-        <div class="process">
-          <h3>Standard evaluation process</h3>
-          <ol>
-            <li>Unboxing and visual inspection</li>
-            <li>Initial setup and configuration</li>
-            <li>Battery, audio and network observations</li>
-            <li>Real-world field use</li>
-            <li>Strengths, weaknesses and practical recommendations</li>
-            <li>Final written report with photographs</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="status">
-      <div class="wrap status-box">
-        <div>
-          <p class="eyebrow">Current status</p>
-          <h2>Project under development.</h2>
-          <p>
-            The testing methodology and reporting structure are prepared.
-            The first independent field evaluations will be published after real devices
-            have completed the full testing process.
-          </p>
-        </div>
-        <div class="status-pill">First reports coming soon</div>
-      </div>
-    </section>
-
-    <section class="section alt" id="contact">
-      <div class="wrap contact-box">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Interested in a real-world evaluation?</h2>
-          <p>
-            Manufacturers interested in providing a PoC radio for independent field testing
-            are welcome to contact me by email.
-          </p>
-        </div>
-        <a class="button primary" href="mailto:pocradiolab@gmail.com">pocradiolab@gmail.com</a>
-      </div>
-    </section>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="live-strip"><div class="container live-strip__inner">
+    <span><i class="dot dot--green"></i>Website online</span>
+    <span><i class="dot dot--green"></i>Google Search Console</span>
+    <span><i class="dot dot--green"></i>Manufacturers contacted</span>
+    <span><i class="dot dot--amber"></i>First field report — coming soon</span>
+  </div></div>
+  <header class="site-header" id="top"><div class="container nav">
+    <a class="brand" href="#top"><img src="assets/images/logo.png" alt="PoC Radio Lab Europe logo"><span><strong>PoC Radio Lab Europe</strong><small>Independent project · Based in Germany</small></span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    <nav id="main-nav" class="nav-links" aria-label="Main navigation"><a href="#about">About</a><a href="#testing">Testing</a><a href="#environments">Environments</a><a href="#reports">Reports</a><a href="#gallery">Gallery</a><a class="nav-cta" href="#contact">Contact</a>
+<div class="language-switcher" aria-label="Language selector">
+  <button type="button" data-lang="en" aria-pressed="true" title="English">EN</button>
+  <button type="button" data-lang="pl" aria-pressed="false" title="Polski">PL</button>
+  <button type="button" data-lang="de" aria-pressed="false" title="Deutsch">DE</button>
+</div>
+</nav>
+  </div></header>
+  <main id="main">
+    <section class="hero"><div class="hero__media"><img src="assets/images/hero.svg" alt=""></div><div class="hero__shade"></div><div class="container hero__content reveal"><p class="eyebrow">Independent field evaluation</p><h1>Independent<br>real-world testing<br>of PoC radios.</h1><p class="hero__lead">Honest evaluations. Practical results. European field testing.</p><div class="hero__actions"><a class="button button--primary" href="#testing">Testing methodology</a><a class="button button--ghost" href="#contact">Contact</a></div></div><a class="scroll-cue" href="#about"><span></span></a></section>
+    <section class="principles" id="about"><div class="container"><div class="section-head reveal"><p class="eyebrow">Why PoC Radio Lab Europe?</p><h2>Built around real use, not marketing claims.</h2><p>PoC Radio Lab Europe is a personal, independent project created by a radio communication enthusiast in Germany. The aim is simple: evaluate PoC devices during everyday use and provide clear, honest feedback.</p></div><div class="principle-grid">
+      <article class="principle-card reveal"><img src="assets/icons/shield.svg" class="icon" alt=""><h3>Independent</h3><p>No paid reviews. No sponsored opinions. Receiving a test device never guarantees a positive result.</p></article>
+      <article class="principle-card reveal"><img src="assets/icons/globe.svg" class="icon" alt=""><h3>Real-world</h3><p>Devices are used in normal operating conditions rather than judged only from a desk or laboratory.</p></article>
+      <article class="principle-card reveal"><img src="assets/icons/user.svg" class="icon" alt=""><h3>Practical</h3><p>Reports focus on what matters to users: audio, battery, network stability, usability and reliability.</p></article>
+      <article class="principle-card reveal"><img src="assets/icons/pin.svg" class="icon" alt=""><h3>European</h3><p>Field observations are gathered in Germany and during everyday European road-transport use.</p></article>
+    </div></div></section>
+    <section class="method section-dark" id="testing"><div class="container"><div class="section-head section-head--light reveal"><p class="eyebrow">How devices are evaluated</p><h2>A repeatable field process.</h2><p>Every device follows the same sequence so observations remain structured and comparable.</p></div><div class="timeline">
+      <article class="timeline-item reveal"><span class="timeline-number">01</span><img src="assets/icons/box.svg" class="icon" alt=""><h3>Unboxing</h3><p>Packaging, included accessories, condition and first visual inspection.</p></article>
+      <article class="timeline-item reveal"><span class="timeline-number">02</span><img src="assets/icons/settings.svg" class="icon" alt=""><h3>Configuration</h3><p>Firmware, network, application, accounts and initial operation.</p></article>
+      <article class="timeline-item reveal"><span class="timeline-number">03</span><img src="assets/icons/truck.svg" class="icon" alt=""><h3>Daily use</h3><p>Normal use in transport, at home, outside and where possible in industry.</p></article>
+      <article class="timeline-item reveal"><span class="timeline-number">04</span><img src="assets/icons/flame.svg" class="icon" alt=""><h3>Stress observation</h3><p>Long days, network transitions, noise, charging and repeated communication.</p></article>
+      <article class="timeline-item reveal"><span class="timeline-number">05</span><img src="assets/icons/chart.svg" class="icon" alt=""><h3>Evaluation</h3><p>Strengths, weaknesses, issues, practical recommendations and ratings.</p></article>
+      <article class="timeline-item reveal"><span class="timeline-number">06</span><img src="assets/icons/file.svg" class="icon" alt=""><h3>Final report</h3><p>A structured written report supported by original field photography.</p></article>
+    </div></div></section>
+    <section class="environments" id="environments"><div class="container"><div class="section-head reveal"><p class="eyebrow">Testing environments</p><h2>Four settings. One consistent method.</h2><p>The photographs below are temporary placeholders and can later be replaced by original field images.</p></div><div class="environment-grid">
+      <article class="environment-card reveal"><img src="assets/images/truck.svg" alt="Truck testing placeholder"><div class="environment-card__body"><span>01</span><h3>Truck</h3><p>Road transport, long working days, urban traffic, motorways and LTE continuity.</p></div></article>
+      <article class="environment-card reveal"><img src="assets/images/industrial.svg" alt="Industrial testing placeholder"><div class="environment-card__body"><span>02</span><h3>Industrial</h3><p>Where available: halls, steel structures, noise, walls and practical voice communication.</p></div></article>
+      <article class="environment-card reveal"><img src="assets/images/home.svg" alt="Home testing placeholder"><div class="environment-card__body"><span>03</span><h3>Home</h3><p>Setup, Wi-Fi operation, charging, ease of use and normal everyday communication.</p></div></article>
+      <article class="environment-card reveal"><img src="assets/images/outdoor.svg" alt="Outdoor testing placeholder"><div class="environment-card__body"><span>04</span><h3>Outdoor</h3><p>Portability, display visibility, network stability and voice quality outside.</p></div></article>
+    </div></div></section>
+    <section class="metrics section-dark"><div class="container"><div class="section-head section-head--light reveal"><p class="eyebrow">Evaluation scope</p><h2>What matters in daily use.</h2></div><div class="metric-grid"><div class="metric reveal"><strong>Audio</strong><span>Speaker clarity, microphone and noise handling</span></div><div class="metric reveal"><strong>Battery</strong><span>Runtime, standby and charging behaviour</span></div><div class="metric reveal"><strong>Network</strong><span>LTE, Wi-Fi, recovery and communication stability</span></div><div class="metric reveal"><strong>Software</strong><span>Setup, speed, usability and reliability</span></div><div class="metric reveal"><strong>Build</strong><span>Materials, controls, ergonomics and accessories</span></div><div class="metric reveal"><strong>Daily usability</strong><span>Real comfort, practical limitations and user experience</span></div></div></div></section>
+    <section class="status-section"><div class="container status-layout"><div class="section-head reveal"><p class="eyebrow">Live project</p><h2>Project status.</h2><p>This panel can be updated as the project develops.</p></div><div class="status-panel reveal"><div><span>Website online</span><b>Complete</b></div><div><span>Google Search Console</span><b>Complete</b></div><div><span>Manufacturers contacted</span><b>Active</b></div><div><span>First evaluation</span><b class="amber">Waiting</b></div><div><span>First public report</span><b class="muted">Planned</b></div></div></div></section>
+    <section class="reports" id="reports"><div class="container"><div class="section-head reveal"><p class="eyebrow">Reports</p><h2>Field evaluation archive.</h2><p>Real reports will be added only after a device completes the full test process.</p></div><article class="report-card reveal"><div class="report-cover"><img src="assets/images/logo.png" alt=""><span>PLR-2026-001</span><strong>First independent<br>field evaluation</strong><small>Coming soon</small></div><div class="report-copy"><p class="eyebrow">Report archive</p><h3>No public reports yet.</h3><p>The first report will include original photography, structured observations, strengths, weaknesses and practical recommendations.</p><button class="button button--disabled" disabled>PDF not available yet</button></div></article></div></section>
+    <section class="gallery section-dark" id="gallery"><div class="container"><div class="section-head section-head--light reveal"><p class="eyebrow">Gallery</p><h2>Field documentation.</h2><p>These placeholders will later be replaced with original photographs from real evaluations.</p></div><div class="gallery-grid"><button class="gallery-item reveal" data-image="assets/images/gallery-1.svg"><img src="assets/images/gallery-1.svg" alt="Field documentation placeholder"></button><button class="gallery-item reveal" data-image="assets/images/gallery-2.svg"><img src="assets/images/gallery-2.svg" alt="Audio test placeholder"></button><button class="gallery-item reveal" data-image="assets/images/gallery-3.svg"><img src="assets/images/gallery-3.svg" alt="Battery test placeholder"></button></div></div></section>
+    <section class="manufacturer-call"><div class="container manufacturer-call__inner reveal"><div><p class="eyebrow">Manufacturers</p><h2>Interested in an independent field evaluation?</h2><p>Manufacturers may provide PoC devices for honest real-world testing and a structured written report.</p></div><a class="button button--primary" href="mailto:pocradiolab@gmail.com">Contact by email</a></div></section>
+    <section class="contact section-dark" id="contact"><div class="container contact__inner reveal"><img src="assets/images/logo.png" alt="PoC Radio Lab Europe logo"><p class="eyebrow">Contact</p><h2>PoC Radio Lab Europe</h2><p>Independent project · Based in Germany</p><a href="mailto:pocradiolab@gmail.com">pocradiolab@gmail.com</a></div></section>
   </main>
-
-  <footer>
-    <div class="wrap footer-wrap">
-      <span>© 2026 PoC Radio Lab Europe</span>
-      <span>Independent field testing</span>
-    </div>
-  </footer>
-</body>
-</html>
+  <footer class="footer"><div class="container footer__inner"><span>© 2026 PoC Radio Lab Europe</span><span>Real World. Real Tests. Real Results.</span><span>Last updated: July 2026</span></div></footer>
+  <dialog class="lightbox" id="lightbox"><button class="lightbox__close" aria-label="Close image">×</button><img src="" alt="Expanded gallery image"></dialog>
+</body></html>
