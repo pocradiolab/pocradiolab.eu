@@ -1,1 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://pocradiolab.eu/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://pocradiolab.eu/</loc></url>
+<url><loc>https://pocradiolab.eu/knowledge/</loc></url>
+<url><loc>https://pocradiolab.eu/knowledge/what-is-poc.html</loc></url>
+<url><loc>https://pocradiolab.eu/knowledge/comparisons.html</loc></url>
+<url><loc>https://pocradiolab.eu/manufacturers/</loc></url>
+<url><loc>https://pocradiolab.eu/database/</loc></url>
+<url><loc>https://pocradiolab.eu/reports/</loc></url>
+<url><loc>https://pocradiolab.eu/gallery/</loc></url>
+<url><loc>https://pocradiolab.eu/contact.html</loc></url>
+</urlset>
